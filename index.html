@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form>
+        <div class="name">
+          <ion-icon name="person" class="icon"></ion-icon>
+          <input
+            type="text"
+            id="text"
+            class="name-1"
+            placeholder="First Name"
+            required
+          />
+
+          <div class="name-2">
+            <ion-icon name="person" class="icon"></ion-icon>
+            <input
+              type="text"
+              id="text"
+              class="name-2"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="email-password">
+          <ion-icon name="mail" class="icon"></ion-icon>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+
+          <ion-icon name="lock-closed"></ion-icon>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+        </div>
+        <div class="date">
+          <span>Date of Birth:</span>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div class="gender">
+          <span>Gender:</span>
+          <input type="radio" id="male" name="gender-radio" />
+          <label for="male">male</label>
+          <input type="radio" id="female" name="gender-radio" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender-radio" />
+          <label for="other">Other</label>
+        </div>
+
+        <div class="selectbox">
+          <span>Select a course:</span>
+          <select name="" id="select">
+            <option value="graphic-design">Graphic design</option>
+            <option value="web-design">Web Design</option>
+            <option value="full-stack-web-development">
+              Full Stack Web Development
+            </option>
+            <option value="apps-development">Apps Development</option>
+            <option value="ui-ui-design">UI/UX Design</option>
+          </select>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="check" id="check">
+              I agree with terms and conditions.
+            </label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="link">
+      <button class="boolean-btn">
+        <a href="boolean.html" target="_blank">Boolean page</a>
+      </button>
+      <button class="display-btn">
+        <a href="display.html" target="_blank">Display page</a>
+      </button>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
